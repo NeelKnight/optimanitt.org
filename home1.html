@@ -1,0 +1,562 @@
+<!DOCTYPE html>	
+<html lang="en-US">
+
+	<head> 		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.5">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+Paaji">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne"> 
+		<link rel="stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src='https://www.google.com/recaptcha/api.js?hl=en'></script>
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css" media="screen,projection">
+		<link rel="shortcut icon" href="images/favicon.ico" type='image/x-icon'>
+		<script src="/pace/pace.js"></script>
+  		<link href="/pace/themes/6.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+		<link rel="stylesheet" type="text/css" href="css/home1.css">
+		<title>Optima - Challenge yourself!</title> 
+	</head> 
+	
+	<body>	
+		
+		<noscript>
+      	<style> .pre-loader { display: none; } </style>
+      	<h4>You have Javascript disabled in your browser. Please turn on Javascript!</h4>
+      </noscript>			
+		
+		<div class="pre-loader"></div>
+		
+		<section id="home" class="page-section">			
+			
+			<div class="row">
+				
+				<div class="col s4 m3 l2">
+					
+					<div style="position: relative;" class="optimalogo">
+						
+						<img class="responsive-img" src="images/optimalogo3.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo2.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo1.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo.png" alt="Optima logo">
+					
+					</div>
+					<div class="hide-on-med-and-down" style="margin-top: 180px;">
+						
+						<ul class="nav1">
+				  			<a href="#home"><li class="active1"><i class="material-icons" aria-hidden="true">home</i> &nbsp; Home</li></a>
+			  				<a href="#events"><li><i class="material-icons" aria-hidden="true">event</i> &nbsp; Events</li></a>
+			  				<a href="#sponsors"><li><i class="material-icons" aria-hidden="true">business_center</i> &nbsp; Sponsors</li></a>
+						</ul>
+						
+					</div>
+					<nav style="background-color: transparent; box-shadow: 0px 0px 0px 0px; margin-top: 100px;">
+     					
+     					<a href="#" data-activates="mobnav" class="button-collapse"><i class="material-icons flarge">menu</i></a>
+     					<ul class="side-nav" id="mobnav">
+							<li><a href="#home"><i class="material-icons flarge" aria-hidden="true">home</i> &nbsp; Home</a></li>
+			  				<li><a href="#events"><i class="material-icons flarge" aria-hidden="true">event</i> &nbsp; Events</a></li>
+			  				<li><a href="#sponsors"><i class="material-icons flarge" aria-hidden="true">business_center</i> &nbsp; Sponsors</a></li>
+			  				<li class="regmenu"><a href="#"><i class="material-icons flarge" aria-hidden="true">add_box</i> &nbsp; Register</a></li>
+			  			</ul>
+  					
+  					</nav>
+  					
+				</div>
+				<div class="col s4 right">
+				
+					<div class="cubespinner">
+						
+						<div class="face1">
+							<a href="http://www.nitt.edu" target="_blank"><img class="responsive-img" src="images/nit.png" alt="NIT logo"></a>
+						</div>
+						<div class="face2">
+							<a href="https://www.nitt.edu/home/academics/departments/ca/" target="_blank">
+								<h4>Department of Computer Applications</h4>
+							</a>
+						</div>
+						<div class="face3">
+							<a href="https://www.nitt.edu/home/academics/departments/ca/" target="_blank">
+								<h4>Presented by<br>M.Sc. Computer Science</h4>
+							</a>
+						</div>
+						<div class="face4">
+							<h4>Event on October 13th, 2017</h4>
+						</div>
+						
+					</div>
+							
+				</div>
+				<div class="spinner-container">
+					
+					<div id="spinner"></div>									<!--logo-->
+					<p class="ltext">
+						
+						<span>O</span> <span>P</span> <span>T</span> <span>I</span> <span>M</span> <span>A</span>
+					
+					</p>
+					<p class="ltext1">
+						
+						<span>I</span> <span>n</span>	<span>n</span> <span>o</span> <span>v</span> <span>a</span> <span>t</span> <span>e</span>
+					
+					</p>						
+					<div id="vline"></div>
+					<div id="hline"></div>
+					<div id="dline1"></div>
+					<div id="dline2"></div>
+					<div id="circle1"></div>
+					<div id="circle2"></div>
+					<div id="circle3"></div>
+					<div id="radar"></div>
+				
+				</div>
+				
+				<div id="myModal" class="modal1">
+							
+					<div class="modal-content">
+						
+						<div class="modal-header">
+							
+							<span class="close" style="margin-top: -10px;">&times;</span>
+							<img style="width: 150px;" src="images/optimalogo.png" alt="Optima logo">
+						
+						</div>
+						<div class="modal-header1">
+							
+							<a><div><h5 id="instruction">Instructions</h5></div></a>
+							<a><div><h5 id="register">Register</h5></div></a>
+							
+						</div>
+						<div id="modbody1" class="modal-body">
+							
+							<br>		
+							<h5 style="color: #d34128; text-decoration: underline;">How to Proceed</h5>
+							<p>1.&nbsp; Register yourself from the register tab.<br>
+								2.&nbsp; Confirm your registration by entering the confirmation code sent to your registered e-mail.<br>
+								3.&nbsp; Make sure you have read all given instructions carefully before you proceed for event selection.<br>
+								4.&nbsp; Choose the event you want to participate in. Remember that participation in some events are mutually exclusive.<br>
+								5.&nbsp; Be sure to check out our FAQs section for queries.</p>
+							<br><hr style="border-width: 1px; color: #aaa"><br>
+							<h5 style="color: #d34128; text-decoration: underline;">Rules and regulations</h5>
+							<p>1.&nbsp; An individual cannot participate in more than one event amongst Rubber Duck, Adbiz, Webmistri, IQ Maze, and Battle of Minds.<br>
+								2.&nbsp; An individual cannot be a member of more than one team.<br>
+								3.&nbsp; If an individual is shortlisted in the events - Info Fiesta or Pixethon, s/he cannot continue in any other event.<br>
+								4.&nbsp; Spot registration is not allowed.<br>
+								5.&nbsp; No registration fee is required for any event.<br>
+								6.&nbsp; ID card is mandatory, and without it, participation will not be allowed in any event.<br>
+								7.&nbsp; Decision of the judges will be final and binding. No disputes will be entertained.<br>
+								8.&nbsp; Any act against the rules and regulations of the respective events will lead to immediate disqualification of the team.<br>
+								9.&nbsp; Use of any electronic device while participating in an event is not allowed.<br>
+								10.&nbsp;All team members must be from the same institution.</p><br>
+								
+							<hr style="border-width: 1px; color: #aaa"><br>
+							<h5 style="color: #d34128; text-decoration: underline;">FAQs</h5>
+								<p style="padding: 10px 10px 0px 10px;">
+									<b>Q. I am a PG student. Can I participate?</b><br>
+										A. Yes, all our events are open for students from both undergraduate as well as postgraduate courses.<br><br>
+									<b>Q. Is there any reward for event winners?</b><br>
+										A. Yes! We have cash prizes for winners from every event.<br><br>
+									<b>Q. What is the registration fee for the events enlisted?</b><br>
+										A. All our events are free for participation. No registration fee is required. Come show us your ardour.<br><br>
+									<b>Q. Is there any token of appreciation for participants?</b><br>
+										A. Yes, we will provide participation certificates to everyone.<br><br>
+									<b>Q. Is there anything else besides the events?</b><br>
+										A. Yes, we have free workshops for you to attend on site. There will also be a guest lecture that you won't want to miss.<br><br>
+									<b>Q. Is there any provision made for meals?</b><br>
+										A. Yes, we have made arrangements for lunch.<br><br>
+									<b>Q. Am I required to register for the events - Info Fiesta, Pixethon, or, Adbiz?</b><br>
+										A. Yes, one must register for any event that s/he wants to participate in. It will enable us to make arrangements for your lunch and prepare your participation certificates.</p>
+						</div>																										<!-- End of Instructions -->
+						<div id="modbody2" class="modal-body" style="display: none;">
+																	
+							<form action="register.php" method="post">
+								
+								<br><br>
+								
+								<div class="row">
+									
+									<b>&nbsp;Team Member 1</b><br>
+									<div class="input-field col s6">
+         							<i class="material-icons prefix">account_circle</i>
+         							<input id="fname" type="text" class="validate" maxlength="25" data-length="25" name="fname" autocomplete="off" required>
+          							<label for="fname">First Name</label>
+        							</div>
+        							
+        							<div class="input-field col s6">
+         							<input id="lname" type="text" class="validate" maxlength="25" data-length="25" name="lname" autocomplete="off" required>
+          							<label for="lname">Last Name</label>
+        							</div>
+        								
+								</div>
+								<div class="row">
+								
+									<div class="input-field col s12">
+          							<i class="material-icons prefix">email</i>
+          							<input id="email" type="email" class="validate" maxlength="75" data-length="75" name="email" autocomplete="off" required>
+          							<label for="email">Email</label>
+        							</div>
+        							
+        						</div>
+        						<div class="row">
+        							
+        							<div class="col s6">
+                           	<button class="btn waves-effect waves-light" type="button" id="sendmail">Send OTP
+											<i class="material-icons right">send</i>
+										</button>
+									</div>
+									
+								</div><br>      						
+        						<div class="row">
+								
+									<div class="input-field col s12">
+         							<i class="material-icons prefix">account_balance</i>
+         							<input id="collegename" type="text" class="validate" maxlength="75" data-length="75" name="collegename" autocomplete="off" required>
+          							<label for="collegename">College</label>
+        							</div>
+        						
+        						</div>
+								<div class="input-field col s12">
+									
+									<i class="material-icons prefix">phone</i>
+									<input id="mobnum" type="tel" class="validate" name="mobnum" pattern="[1-9]{1}[0-9]{9}" maxlength="10" data-length="10" name="mobnum" autocomplete="off" required>
+									<label for="mobnum">Mobile Number</label>
+									
+								</div><br><br><br><br><br><br><br>
+										 
+								<b>Event Selection :</b><br><br>
+								
+									<input class="with-gap" name="event" type="radio" id="battleofminds" value="battleofminds" checked>&nbsp;&nbsp;
+    								<label for="battleofminds">Battle of Minds</label>
+    								<input class="with-gap" name="event" type="radio" id="infofiesta" value="infofiesta" >&nbsp;&nbsp;
+    								<label for="infofiesta">Info Fiesta</label>
+    								<input class="with-gap" name="event" type="radio" id="iqmaze" value="iqmaze" >&nbsp;&nbsp;
+    								<label for="iqmaze">IQ Maze</label>
+    								<input class="with-gap" name="event" type="radio" id="adbiz" value="adbiz" >&nbsp;&nbsp;
+    								<label for="adbiz">Adbiz</label>
+    								<input class="with-gap" name="event" type="radio" id="webmistri" value="webmistri" >&nbsp;&nbsp;
+    								<label for="webmistri">Web Mistri</label>
+    								<input class="with-gap" name="event" type="radio" id="rubberduck" value="rubberduck" >&nbsp;&nbsp;
+    								<label for="rubberduck">Rubber Duck</label>
+    								<input class="with-gap" name="event" type="radio" id="pixethon" value="pixethon" >&nbsp;&nbsp;
+    								<label for="pixethon">Pixethon</label>
+    																		 
+								<br><br><br><br>
+										 
+								<div id="displayondemand1">
+									
+									<div class="row">
+									
+										<b>&nbsp;Team Member 2</b><br>
+										<div class="input-field col s6">
+		      							<i class="material-icons prefix">account_circle</i>
+		      							<input id="fname1" type="text" class="validate" maxlength="25" data-length="25" name="fname1" autocomplete="off" required>
+		       							<label for="fname1">First Name</label>
+		     							</div>
+		     							
+		     							<div class="input-field col s6">
+		      							<input id="lname1" type="text" class="validate" maxlength="25" data-length="25" name="lname1" autocomplete="off" required>
+		       							<label for="lname1">Last Name</label>
+		     							</div>
+        								
+									</div>
+									<div class="input-field col s12">
+									
+										<i class="material-icons prefix">phone</i>
+										<input id="mobnum1" type="tel" class="validate" name="mobnum1" pattern="[1-9]{1}[0-9]{9}" maxlength="10" data-length="10" autocomplete="off" required>
+										<label for="mobnum1">Mobile Number</label>
+									
+									</div><br><br><br><br><br><br>
+									
+								</div>	 
+								<div id="displayondemand2" style="display: none;">
+									
+									<div class="row">
+									
+										<b>&nbsp;Team Member 3</b><br>
+										<div class="input-field col s6">
+		      							<i class="material-icons prefix">account_circle</i>
+		      							<input id="fname2" type="text" class="validate" maxlength="25" data-length="25" name="fname2" autocomplete="off">
+		       							<label for="fname2">First Name</label>
+		     							</div>
+		     							
+		     							<div class="input-field col s6">
+		      							<input id="lname2" type="text" class="validate" maxlength="25" data-length="25" name="lname2" autocomplete="off">
+		       							<label for="lname2">Last Name</label>
+		     							</div>
+        								
+									</div>
+									<div class="input-field col s12">
+									
+										<i class="material-icons prefix">phone</i>
+										<input id="mobnum2" type="tel" class="validate" name="mobnum2" pattern="[1-9]{1}[0-9]{9}" maxlength="10" data-length="10" autocomplete="off">
+										<label for="mobnum2">Mobile Number</label>
+									
+									</div><br><br><br><br><br><br><br>
+									<div class="row">
+									
+										<b>&nbsp;Team Member 4</b><br>
+										<div class="input-field col s6">
+		      							<i class="material-icons prefix">account_circle</i>
+		      							<input id="fname3" type="text" class="validate" maxlength="25" data-length="25" name="fname3" autocomplete="off">
+		       							<label for="fname3">First Name</label>
+		     							</div>
+		     							
+		     							<div class="input-field col s6">
+		      							<input id="lname3" type="text" class="validate" maxlength="25" data-length="25" name="lname3" autocomplete="off">
+		       							<label for="lname3">Last Name</label>
+		     							</div>
+        								
+									</div>
+									<div class="input-field col s12">
+									
+										<i class="material-icons prefix">phone</i>
+										<input id="mobnum3" type="tel" class="validate" name="mobnum3" pattern="[1-9]{1}[0-9]{9}" maxlength="10" data-length="10" autocomplete="off">
+										<label for="mobnum3">Mobile Number</label>
+									
+									</div><br><br><br><br><br><br><br>
+									<div class="row">
+									
+										<b>&nbsp;Team Member 5</b><br>
+										<div class="input-field col s6">
+		      							<i class="material-icons prefix">account_circle</i>
+		      							<input id="fname4" type="text" class="validate" maxlength="25" data-length="25" name="fname4" autocomplete="off">
+		       							<label for="fname4">First Name</label>
+		     							</div>
+		     							
+		     							<div class="input-field col s6">
+		      							<input id="lname4" type="text" class="validate" maxlength="25" data-length="25" name="lname4" autocomplete="off">
+		       							<label for="lname4">Last Name</label>
+		     							</div>
+        								
+									</div>
+									<div class="input-field col s12">
+									
+										<i class="material-icons prefix">phone</i>
+										<input id="mobnum4" type="tel" class="validate" name="mobnum4" pattern="[1-9]{1}[0-9]{9}" maxlength="10" data-length="10" autocomplete="off">
+										<label for="mobnum4">Mobile Number</label>
+									
+									</div><br><br><br><br><br><br>
+									
+								</div>
+								
+								
+								<div class="row">
+								  <div class="input-field col s6" style="font-weight: bold;">
+		      							<i class="material-icons prefix">lock</i>
+		      							<input id="otp" name="otp" type="text" placeholder="Enter OTP from mail" class="validate" maxlength="8" data-length="8" autocomplete="off" required>
+		       							<label for="otp">OTP</label>
+		     					          </div>
+		     					         </div>
+								
+								<p>
+									<input type="checkbox" id="checkit" required>
+									<label for="checkit">&emsp;By registering, you agree to our event rules and regulations.</label>
+								</p><br><br>	 
+								
+										 
+								<div class="g-recaptcha" data-sitekey="FILLERTEXT"></div> <br><br>
+								
+								<button class="btn waves-effect waves-light" type="submit" name="register">Register
+									<i class="material-icons right">send</i>
+								</button>
+																		  
+							</form>
+									 									
+						</div>								
+								
+					</div>
+					
+				</div>
+				
+				<a class="waves-effect waves-light btn-large reg-button"><i class="material-icons right flarge">add_box</i>Register</a>
+				
+        	</div>
+		
+		</section>																				<!--end of home -->
+		
+		
+		<div style="background: linear-gradient(45deg, #43cea2 10%, #183452 75%); height: 20px;"></div>
+		
+		
+		<section id="events" class="page-section">
+			
+			<div class="row">
+				
+				<div class="col s4 m3 l2">
+					
+					<div style="position: relative;" class="optimalogo">
+						
+						<img class="responsive-img" src="images/optimalogo3.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo2.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo1.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo.png" alt="Optima logo">
+					
+					</div>
+					<div class="hide-on-med-and-down" style="margin-top: 180px;">
+						
+						<ul class="nav1">
+				  			<a href="#home"><li><i class="material-icons" aria-hidden="true">home</i> &nbsp; Home</li></a>
+			  				<a href="#events"><li class="active1"><i class="material-icons" aria-hidden="true">event</i> &nbsp; Events</li></a>
+			  				<a href="#sponsors"><li><i class="material-icons" aria-hidden="true">business_center</i> &nbsp; Sponsors</li></a>
+						</ul>
+						
+					</div>
+					<nav style="background-color: transparent; box-shadow: 0px 0px 0px 0px; margin-top: 100px;">
+     					
+     					<a href="#" data-activates="mobnav1" class="button-collapse"><i class="material-icons flarge">menu</i></a>
+     					<ul class="side-nav" id="mobnav1">
+							<li><a href="#home"><i class="material-icons flarge" aria-hidden="true">home</i> &nbsp; Home</a></li>
+			  				<li><a href="#events"><i class="material-icons flarge" aria-hidden="true">event</i> &nbsp; Events</a></li>
+			  				<li><a href="#sponsors"><i class="material-icons flarge" aria-hidden="true">business_center</i> &nbsp; Sponsors</a></li>
+			  				<li class="regmenu"><a href="#"><i class="material-icons flarge" aria-hidden="true">add_box</i> &nbsp; Register</a></li>
+			  			</ul>
+  					
+  					</nav>
+  					
+				</div>
+				<div class="s4 offset-s3">
+					<h4 style="font-family: 'Baloo Paaji', cursive; text-decoration: underline; margin-top: 20vh; margin-left: 30vw; position: absolute;">View event details in pdf format</h4>
+					
+					<ul style="font-family: 'Baloo Paaji', cursive; margin-top: 30vh; margin-left: 35vw; position: absolute; list-style-type: disc;">
+      	  	  		<a target="_blank" href="pdf/Battle.pdf"><li><h5>Battle of Minds</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/Info.pdf"><li><h5>Info Fiesta</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/IQ.pdf"><li><h5>IQ Maze</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/Adbiz.pdf"><li><h5>Adbiz</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/Web.pdf"><li><h5>Web Mistri</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/Rubber.pdf"><li><h5>Rubber Duck</h5></li></a>
+      	  	  		<a target="_blank" href="pdf/Photography.pdf"><li><h5>Photography</h5></li></a>
+					</ul>
+					
+				
+				</div>
+				
+			</div>
+		
+		</section>																								<!-- end of events	-->
+		
+		
+		<div style="background: linear-gradient(45deg, #43cea2 10%, #183452 75%); height: 20px;"></div>
+		
+		
+		<section id="sponsors" class="page-section1">
+			
+			<div class="row">
+				
+				<div class="col s4 m3 l2">
+					
+					<div style="position: relative;" class="optimalogo">
+						
+						<img class="responsive-img" src="images/optimalogo3.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo2.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo1.png" alt="Optima logo">
+						<img class="responsive-img" src="images/optimalogo.png" alt="Optima logo">
+					
+					</div>
+					<div class="hide-on-med-and-down" style="margin-top: 180px;">
+						
+						<ul class="nav1">
+				  			<a href="#home"><li><i class="material-icons" aria-hidden="true">home</i> &nbsp; Home</li></a>
+			  				<a href="#events"><li><i class="material-icons" aria-hidden="true">event</i> &nbsp; Events</li></a>
+			  				<a href="#sponsors"><li class="active1"><i class="material-icons" aria-hidden="true">business_center</i> &nbsp; Sponsors</li></a>
+						</ul>
+						
+					</div>
+					<nav style="background-color: transparent; box-shadow: 0px 0px 0px 0px; margin-top: 100px;">
+     					
+     					<a href="#" data-activates="mobnav2" class="button-collapse"><i class="material-icons flarge">menu</i></a>
+     					<ul class="side-nav" id="mobnav2">
+							<li><a href="#home"><i class="material-icons flarge" aria-hidden="true">home</i> &nbsp; Home</a></li>
+			  				<li><a href="#events"><i class="material-icons flarge" aria-hidden="true">event</i> &nbsp; Events</a></li>
+			  				<li><a href="#sponsors"><i class="material-icons flarge" aria-hidden="true">business_center</i> &nbsp; Sponsors</a></li>
+			  				<li class="regmenu"><a href="#"><i class="material-icons flarge" aria-hidden="true">add_box</i> &nbsp; Register</a></li>
+			  			</ul>
+  					
+  					</nav>
+  					
+				</div>
+				<div class="col s6 m9 l10" style="font-family: 'Baloo Paaji', cursive;">
+					<div class="row" style="margin-top: 10px;">
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb">
+								<div class="deck">
+									<img style="background-color: #ccc" src="images/deck1.png" alt="sponsor's deck">
+									<div><h4 style="color: orange;"> <br><br> Sponsor's Deck </h4></div>
+								</div>
+							</div>
+						</div>
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb1">
+								<div class="deck">
+									<img src="images/0011.png" alt="peramanathan">
+									<div>
+										<h5 style="color: orange;">Mr. & Mrs. Peramanathan </h5>
+										<h6>M.Sc. (O.R. And C.A.) ,<br> Batch of 2009</h6>
+										<h6 style="color: orange;">Mr. P Sathyamoorthy,</h6><h6>Software Engineer, Oneflow AB, Sweden</h6>
+										<h6 style="color: orange;">Mrs. J Peramanathan,</h6><h6> Student at Stockholm University, Sweden</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb">
+								<div class="deck">
+									<img src="images/0021.png" alt="indumathi">
+										<div>
+											<h5 style="color: orange;">Indumathi Vadivel<br><br></h5>
+											<h6>M.Sc. Computer Science, Batch of 2015<br><br>Consultant, EY Chennai</h6>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb1">
+								<div class="deck">
+									<img style="background-color: #ccc" src="images/user.png" alt="sponsor image">
+									<div>
+										<h5 style="color: orange;">Manoj Kumar S<br><br></h5>
+										<h6>M.Sc. (O.R. & C.A.),<br> Batch of 2008<br><br><br>Juniper Networks, Bangalore</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb">
+								<div class="deck">
+									<img style="background-color: #ccc" src="images/user.png" alt="sponsor image">
+									<div>
+										<h5 style="color: orange;">Udhay<br><br></h5>
+										<h6>M.Sc. Computer Science, Batch of 2015,<br><br><br> ASE-trainee, TCS Bangalore</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s5 m6 l3" style="padding: 20px;">
+							<div class="bb">
+								<div class="deck">
+									<img src="images/poorvika.jpeg" alt="poorvika mobiles">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</section>
+		
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script type="text/javascript" src="js/script1.js"></script>
+		
+	</body> 
+</html>
+
+
+
+
+
+
+
+
+
